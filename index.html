@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Preductor Résultats</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<div class="container">
+  <div class="container">
     <h1>⚽ Preductor Résultats Sérieux</h1>
 
-    <input type="file" id="csvFile" accept=".csv">
-    <button onclick="loadCSV()">Charger Dataset</button>
+    <div class="controls">
+      <button id="btnLoad">Charger data (GitHub)</button>
+      <select id="leagueSelect"></select>
+      <select id="journeeSelect"></select>
+    </div>
 
-    <div id="result"></div>
-</div>
+    <div id="summary" class="card"></div>
+    <div id="tableWrap" class="card"></div>
+  </div>
 
 <script src="script.js"></script>
 </body>
